@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Redes_Solidarias</string>
+    <string name="buttonScreenSplash">Servicios</string>
+    <string name="textViewTitulo">PRODUCTOS</string>
+    <string name="btnRegresoInformacion">Volver</string>
+
+</resources>

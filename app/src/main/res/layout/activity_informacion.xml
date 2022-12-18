@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Informacion">
+
+    <TextView
+        android:id="@+id/textNombreInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="60dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imgInformacion"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/mundo" />
+
+    <TextView
+        android:id="@+id/textDescripcionInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textPrecioInformacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnRegresoInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/btnRegresoInformacion" />
+</LinearLayout>
