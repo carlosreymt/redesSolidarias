@@ -8,7 +8,7 @@ import android.widget.Button;
 /* Autor: Carlos Alberto Rey Ardila
 Grupo 103 Desarrollo Movil
 Unab Mision TIC 2022
-Spring 1 y 2 Desarrollados
+Sprint 4
 Otros miembros del Equipo 6: Maria Fernanda Sosa, Cristian Avila, Alex Rueda -104- y Leonardo Gonzalez
  */
 
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         buttonScreenSplash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Servicios.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }
         });

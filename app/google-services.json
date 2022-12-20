@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252657976323",
+    "project_id": "nivelacion-equipo6",
+    "storage_bucket": "nivelacion-equipo6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252657976323:android:6e4a76f9c56726cffbfa36",
+        "android_client_info": {
+          "package_name": "com.example.redessolidarias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252657976323-hn7psv9j5f124r5n8ave5p7ks0j7hahk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKGYxptafmv_bN9T1bbhEM-IwxshiQNhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252657976323-hn7psv9j5f124r5n8ave5p7ks0j7hahk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

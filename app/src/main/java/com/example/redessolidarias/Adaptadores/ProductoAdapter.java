@@ -9,11 +9,12 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.redessolidarias.Entidades.Producto;
+import com.example.redessolidarias.DB.DBFirebase;
 import com.example.redessolidarias.Informacion;
+import com.example.redessolidarias.Formulario;
+import com.example.redessolidarias.Servicios;
 import com.example.redessolidarias.R;
-
 import java.util.ArrayList;
 
 public class ProductoAdapter extends BaseAdapter {
@@ -74,7 +75,7 @@ public class ProductoAdapter extends BaseAdapter {
         textDescripcionProducto.setText(producto.getDescripcion());
         textPrecioProducto.setText(String.valueOf(producto.getPrecio()));
 
-        imgProducto.setImageResource(R.drawable.logoRedes);
+        imgProducto.setImageResource(R.drawable.logoredes);
 
 imgProducto.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -90,6 +91,16 @@ imgProducto.setOnClickListener(new View.OnClickListener() {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent =  new Intent(context, Formulario.class);
+                intent.putExtra("add", true);
+                intent.putExtra("id", producto.getId());
+                intent.putExtra("nombre", producto.getNombre());
+                intent.putExtra("descripcion", producto.getDescripcion());
+                intent.putExtra("precio", String.valueOf(producto.getPrecio()));
+                intent.putExtra("imagen", producto.getImagen());
+                intent.putExtra("latitud", producto.getLatitud());
+                intent.putExtra("longitud", producto.getLongitud());
+                context.startActivity(intent);
 
             }
         });
@@ -97,14 +108,26 @@ imgProducto.setOnClickListener(new View.OnClickListener() {
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                DBFirebase dbFirebase = new DBFirebase();
+                dbFirebase.deleteData(producto.getId());
+                Intent intent = new Intent(context, Servicios.class);
+                context.startActivity(intent);
             }
         });
 
         buttonEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent =  new Intent(context, Formulario.class);
+                intent.putExtra("edit", true);
+                intent.putExtra("id", producto.getId());
+                intent.putExtra("nombre", producto.getNombre());
+                intent.putExtra("descripcion", producto.getDescripcion());
+                intent.putExtra("precio", String.valueOf(producto.getPrecio()));
+                intent.putExtra("imagen", producto.getImagen());
+                intent.putExtra("latitud", producto.getLatitud());
+                intent.putExtra("longitud", producto.getLongitud());
+                context.startActivity(intent);
             }
         });
         return view;

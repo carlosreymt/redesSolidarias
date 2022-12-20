@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">Redes_Solidarias</string>
-    <string name="buttonScreenSplash">Servicios</string>
+    <string name="buttonScreenSplash">Ingresar</string>
     <string name="textViewTitulo">PRODUCTOS</string>
+    <string name="textTituloRegistro">REGISTRO</string>
+    <string name="textEmailRegistro">Email</string>
+    <string name="textPasswordRegistro">Contraseña</string>
+    <string name="textNombreFormulario">Nombre</string>
+    <string name="textDescripcionFormulario">Descripcion</string>
+    <string name="textPrecioFormulario">Precio</string>
+    <string name="textPasswordConfirmaRegistro">Confirme</string>
     <string name="btnRegresoInformacion">Volver</string>
+    <string name="btnFormulario">Actualizar</string>
+    <string name="textTituloFormulario">Formulario</string>
+        <string name="btnLogin">Ingresar</string>
+    <string name="btnLoginRegister">Registrar</string>
 
 </resources>

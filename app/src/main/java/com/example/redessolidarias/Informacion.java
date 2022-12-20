@@ -25,9 +25,9 @@ private TextView textPrecioInformacion;
         textPrecioInformacion = (TextView) findViewById(R.id.textPrecioInformacion);
 
         Intent intentIn = getIntent();
-        textNombreInformacion.setText(intentIn.getIntExtra("nombre"));
-        textDescripcionInformacion.setText(intentIn.getIntExtra("descripcion"));
-        textPrecioInformacion.setText(intentIn.getIntExtra("precio"));
+        textNombreInformacion.setText(intentIn.getStringExtra("nombre"));
+        textDescripcionInformacion.setText(intentIn.getStringExtra("descripcion"));
+        textPrecioInformacion.setText(intentIn.getStringExtra("precio"));
 
         btnRegresoInformacion.setOnClickListener(new View.OnClickListener() {
             @Override

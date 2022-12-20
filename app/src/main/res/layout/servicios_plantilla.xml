@@ -5,70 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <ImageView
         android:id="@+id/imgProducto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         tools:srcCompat="@tools:sample/avatars" />
-
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-
         <TextView
             android:id="@+id/textNombreProducto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="" />
-
         <TextView
             android:id="@+id/textDescripcionProducto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="" />
-
         <TextView
             android:id="@+id/textPrecioProducto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_add_24"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_edit_24"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_baseline_delete_24"
             android:text="" />
 
     </LinearLayout>
+</LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/buttonAdd"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_baseline_add_24"
-                android:text="" />
-
-            <Button
-                android:id="@+id/buttonEdit"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_baseline_edit_24"
-                android:text="" />
-
-            <Button
-                android:id="@+id/buttonDelete"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_baseline_delete_24"
-                android:text="" />
-
-        </LinearLayout>
-
-    </LinearLayout>
 
