@@ -1,2 +1,2 @@
 # redesSolidarias
- Desarrollo Movil Spring1 y 2
+ Desarrollo Movil Sprints
